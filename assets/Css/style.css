@@ -1,0 +1,434 @@
+@font-face {
+    font-family: panton;
+    src: url(../fonts/panton.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    font-family: panton;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    margin-left: 11%;
+    margin-bottom: -45px;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+
+
+.headnav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 450px;
+    color: #181818;
+
+}
+
+.carss,
+.terms,
+.contact,
+.book {
+    color: #181818;
+}
+
+.carss:hover {
+    color: #6AB04C;
+    transition: 300ms color ease;
+}
+
+.terms:hover {
+    color: #6AB04C;
+    transition: 300ms color ease;
+}
+
+.contact:hover {
+    color: #6AB04C;
+    transition: 300ms color ease;
+}
+
+.book:hover {
+    color: #6AB04C;
+    transition: 300ms color ease;
+}
+
+.book {
+    padding: 15px 32px 15px 35px;
+    border-radius: 30px;
+    background-image: linear-gradient(#6AB04C, #BADC58);
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.bmenu {
+    display: none
+}
+
+.heromain::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background: #E8F0F3;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.heromain {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: calc(100vh - 60px);
+    align-items: center;
+    justify-content: center;
+    margin-left: 5%;
+    margin-top: -7%
+}
+
+
+
+.hero-content::before {
+    content: 'nodmotors';
+    display: block;
+    width: 100%;
+    position: relative;
+    top: calc(50% - 50px);
+    font-size: 250px;
+    font-family: panton;
+    opacity: .6;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 8px 11px rgba(24, 24, 24, .06);
+    z-index: -1;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    position: relative;
+    font-size: 30px;
+    margin-left: -60%;
+    margin-top: -30px;
+
+}
+
+.hero-content p {
+    position: relative;
+    margin-left: -69%;
+    margin-bottom: -60px
+}
+
+section p {
+    color: #fff;
+    font-size: 14px
+}
+
+.descri {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -50px;
+    width: 55%
+}
+
+.descri li {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero1 {
+    color: #6AB04C;
+    font-size: 12px;
+}
+
+.hero2 {
+    font-size: 30px;
+}
+.hero3{
+    color:#6AB04C;
+
+}
+
+
+
+
+.scroll {
+    width: 88%
+}
+
+.scrolldown {
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-image: linear-gradient(#6AB04C, #BADC58);
+
+}
+
+a.scrolldown {
+
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 25px;
+}
+
+.carmenu {
+    display: flex;
+    flex-direction: column;
+    margin-top: 9.6%
+}
+
+h4 {
+    font-size: 30px;
+    margin-left: 10%;
+    margin-top: 3%;
+}
+
+.h4-p {
+    font-size: 10px;
+    color: #95A5A6;
+    margin-left: 10%;
+
+
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 0;
+    margin-left: 9%;
+}
+
+.first-filter {
+    display: flex;
+    justify-content: space-between;
+    width: 532px;
+}
+
+.Second-filter {
+    position: relative;
+    margin: 0 10px;
+    width: 164px;
+    height: 40px;
+}
+
+.Second-filter.add {
+    display:inline;
+    background-image: linear-gradient(#6AB04C, #BADC58);
+    color: #fff;
+    border-radius: 30px;
+}
+
+.many {}
+
+.Second-filter.add select {
+    width: 59%;
+
+}
+
+.show {
+    width: 30px;
+}
+
+.Second-filter select {
+    width: 105%;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 4px 7px #707070;
+    padding: 12px 30px;
+
+}
+
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 70px 0;
+    margin-left: 3%;
+}
+
+.cars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(33% - 10px);
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.colors {
+    display: flex;
+    cursor: pointer;
+    margin: 15px 0;
+}
+
+.white {
+    background-color: #fff;
+    border: #181818 .5px solid;
+}
+
+.yellow {
+    background-color: #D1BB3F;
+}
+
+.black {
+    background-color: #181818;
+}
+
+.blue {
+    background-color: #2F6AA2;
+}
+
+.grey {
+    background-color: #95A5A6;
+}
+
+.green {
+    background-color: #6AB04C;
+}
+
+.orange {
+    background-color: #FF9331;
+}
+
+.red {
+    background-color: #AA071E;
+}
+
+.white,
+.yellow,
+.green,
+.black,
+.blue,
+.grey,
+.red,
+.orange {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+li div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-left: 30%;
+}
+
+
+div p {
+    font-size: 12px;
+    color: #95A5A6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.mrgn {
+    margin-top: 100px
+}
+
+.simg {
+    margin-bottom: -10%
+}
+
+.bigimg {
+    margin-top: 5%;
+    margin-bottom: 5%
+}
+
+
+h2 {
+    font-size: 20px;
+    color: #181818;
+}
+
+a h2:hover {
+    color: #6AB04C
+}
+
+
+h3 {
+    color: #6AB04C;
+    font-size: 12px;
+}
+
+.speed {
+    display: flex;
+    margin-top: 2%;
+
+}
+
+.speed li {
+    font-size: 10px;
+    color: #95A5A6;
+    display: flex;
+    flex-direction: row;
+    margin: 0 5px;
+}
+
+
+footer {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #95A5A6;
+    height: 130px;
+    margin-left: 5%
+}
+
+.adress {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.cont {
+    color: #95A5A6;
+    margin: 0 5px;
+
+}
+
+.cont:hover {
+    color: #6AB04C;
+}
